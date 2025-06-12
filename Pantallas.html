@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tipos de Pantallas</title>
+  
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="TheProyect.html">
+        <i class="bi bi-display"></i>
+        TheProyect
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="TheProyect.html">TheProyect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Pantallas.html">Pantallas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Parte de Imad/Proyecto.html">Teclados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ratones.html">Ratones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center py-4">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Tipos de Pantallas</h1>
+      <p class="lead">Descubre los diferentes tipos de pantallas y sus características</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100">
+          <img src="Imagenes/pantalla-ips.png" class="card-img-top" alt="Imagen de Pantalla IPS">
+          <div class="card-body">
+            <h5 class="card-title">Pantalla IPS <span class="badge bg-primary">Calidad de Color</span></h5>
+            <p class="card-text">Las pantallas IPS (In-Plane Switching) ofrecen ángulos de visión amplios y una excelente reproducción del color, ideales para diseño gráfico y consumo multimedia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100">
+          <img src="imagenes/monitor-led.jpg" class="card-img-top" alt="Imagen de Pantalla LED">
+          <div class="card-body">
+            <h5 class="card-title">Pantalla LED <span class="badge bg-success">Eficiencia Energética</span></h5>
+            <p class="card-text">Las pantallas LED (Light Emitting Diode) utilizan diodos emisores de luz para la retroiluminación, lo que las hace más eficientes energéticamente y permite diseños más delgados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <h3 class="mb-3">Comparativa de Pantallas</h3>
+    
+    <div class="input-group mb-4">
+      <input class="form-control" id="myInput" type="text" placeholder="Buscar por palabra clave...">
+      <div class="btn-group">
+        <button type="button" id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Filtrar por Característica
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" id="filterDropdown">
+        </ul>
+      </div>
+    </div>
+    
+    <table class="table table-dark table-bordered table-hover mb-5">
+      <thead>
+        <tr>
+          <th>Característica</th>
+          <th>Pantalla IPS</th>
+          <th>Pantalla LED</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        <tr>
+          <td>Calidad de Color</td>
+          <td>Superior. Colores más precisos y consistentes.</td>
+          <td>Buena, pero generalmente menos precisa que IPS.</td>
+        </tr>
+        <tr>
+          <td>Ángulos de Visión</td>
+          <td>Excelentes. El color se mantiene fiel desde casi cualquier ángulo.</td>
+          <td>Limitados. El color y el contraste pueden cambiar al verla de lado.</td>
+        </tr>
+        <tr>
+          <td>Contraste</td>
+          <td>Bueno, pero los negros pueden verse ligeramente grises ("IPS Glow").</td>
+          <td>Superior. Capaz de producir negros más profundos y un mayor contraste.</td>
+        </tr>
+        <tr>
+          <td>Tiempo de Respuesta</td>
+          <td>Generalmente más lento (4ms+), no ideal para gaming competitivo extremo.</td>
+          <td>Más rápido (1ms posible), preferido para gaming de alta velocidad.</td>
+        </tr>
+        <tr>
+          <td>Consumo Energético</td>
+          <td>Mayor consumo debido a la necesidad de una retroiluminación más potente.</td>
+          <td>Menor consumo. Son más eficientes energéticamente.</td>
+        </tr>
+        <tr>
+          <td>Precio</td>
+          <td>Generalmente más caras para las mismas especificaciones.</td>
+          <td>Más asequibles y con una mejor relación calidad-precio.</td>
+        </tr>
+        <tr>
+          <td>Uso Ideal</td>
+          <td>Diseño gráfico, edición de fotografía y video, consumo multimedia.</td>
+          <td>Gaming, ofimática y uso general.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <nav aria-label="Navegación de página" class="d-flex justify-content-center my-4">
+      <ul class="pagination pagination-dark">
+        <li class="page-item"><a class="page-link" href="TheProyect.html">Anterior</a></li>
+        <li class="page-item"><a class="page-link" href="TheProyect.html">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="Parte de Imad/Proyecto.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="Ratones.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="Parte de Imad/Proyecto.html">Siguiente</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer class="py-3 text-center">
+    <p>© 2025 Tipos de Pantallas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+
+      const dropdown = $("#filterDropdown");
+      const characteristics = [];
+      $("#myTable tr").each(function() {
+        const characteristic = $(this).find("td:first").text();
+        if (characteristics.indexOf(characteristic) === -1) {
+          characteristics.push(characteristic);
+        }
+      });
+      
+      dropdown.append('<li><a class="dropdown-item filter-option" href="#">Mostrar Todo</a></li>');
+      
+      characteristics.forEach(function(char) {
+        dropdown.append('<li><a class="dropdown-item filter-option" href="#">' + char + '</a></li>');
+      });
+
+      $(".filter-option").on("click", function(e) {
+        e.preventDefault(); 
+        const selectedValue = $(this).text();
+        
+        $("#dropdownMenuButton").text(selectedValue);
+
+        if (selectedValue === "Mostrar Todo") {
+          $("#myTable tr").show();
+        } else {
+          $("#myTable tr").hide();
+          $("#myTable tr").each(function() {
+            if ($(this).find("td:first").text() === selectedValue) {
+              $(this).show();
+            }
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
